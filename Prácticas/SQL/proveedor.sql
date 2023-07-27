@@ -1,0 +1,16 @@
+create table proveedor(
+	codpro char(3) constraint codpro_no_nulo not null
+	constraint codpro_clave_primaria primary key,
+	nompro varchar2(30) constraint nompro_no_nulo not null,
+	status number constraint status_entre_1_y_10
+		check(status>=1 and status<=10),
+		ciudad varchar2(15));
+
+
+insert into proveedor VALUES ('S1', 'Jose Fernandez', 2, 'Madrid');
+insert into proveedor VALUES ('S2', 'Manuel Vidal', 1, 'Londres');
+insert into proveedor VALUES ('S3', 'Luisa Gomez', 3, 'Lisboa');
+insert into proveedor VALUES ('S4', 'Pedro Sanchez', 4, 'Paris');
+insert into proveedor VALUES ('S5', 'Maria Reyes', 5, 'Roma');
+
+select * from proveedor;

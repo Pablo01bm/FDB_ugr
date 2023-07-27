@@ -1,0 +1,51 @@
+1. Aparece en los años 70, el modelo de datos relacional, aunque se descubrió que anteriormente ya se habían creado algunos y se incluyeron.
+
+El motivo de la aparición de éste es que por lo general los sistemas de bases de datos  tienen una comprensión muy limitada de lo que significa la información que la propia base de datos contiene y sería conveniente que pudieran "entender algo más", con la finalidad de responder de forma inteligente a las peticiones de los usuarios.
+
+
+
+2. Los modelos de datos semánticos son los que se usan para hacer el esquema conceptual y externo de la base de datos y se caracterizan porque tienen una amplia capacidad expresiva, son muy flexibles  y además permiten especificar ciertas restricciones de integridad. (Ej. el modelo entidad-relación).
+Los modelos de datos implementables se utilizan para describir datos a nivel conceptual y físico y permiten especificar la estructura lógica global de la base de datos y también dar una descripción a nivel de implementación (almacenamiento, operadores empleados, etc ).
+
+
+
+
+3.Una entidad es un objeto que existe y que es distinguible de los demás, por ejemplo, profesores, alumnos, asientos de un avión...
+Los conjuntos entidad son agrupaciones de entidades, por ejemplo libros, empleados, etc.
+Una entidad concreta es aquella entidad que es única, por ejemplo un libro concreto, un empleado concreto, etc. Algunos autores denominan tipos a los conjuntos de entidades.
+
+
+4.Son las propiedades que caracterizan un conjunto de entidades.
+
+Por ejemplo dentro de el conjunto de entidades libros, atributos pueden ser el autor, el ISBN, el Título del libro, etc.
+
+La clave primaria de este conjunto es el ISBN. 
+
+
+5. Por ejemplo, un libro puede estar escrito por varios autores, por lo que es un atributo compuesto.
+
+
+
+
+6. Una relación es una conexión semántica entre dos o más conjuntos de entidades.
+
+Entre los conjuntos de entidades libros y autores la relación sería escribe, o en los conjuntos de entidades libros y lectores, lee.
+
+
+
+
+
+7. Por ejemplo en las entidades libros y autores, un libro puede estar escrito por varios autores, y un autor escribir varios libros.
+
+
+
+9. No la incluiría, ya que más bien sería un atributo. no una entidad, y además que sería la clave primaria del conjunto de entidades películas. (Con relación  1:1, una película, tiene un único título, y un título solo tiene asociada una película).
+
+
+
+
+10. Sí la incluiría como la entidad actores, los cuales tendrían una serie de atributos como sus nombres y apellidos, así como del número de películas en los que aparecen, además la relación sería m:n, ya que muchas películas pueden tener muchos actores, y muchos actores pueden aparecer en muchas películas.
+
+
+11. No la incluiría como entidad, sino como atributo directamente.
+
